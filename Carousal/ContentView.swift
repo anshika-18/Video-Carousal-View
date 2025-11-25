@@ -25,7 +25,7 @@ struct ScreenMainView: View {
             
             Text("Get Visas\nOn Time")
                 .multilineTextAlignment(.center)
-                .font(.system(size: 40, weight: .heavy))
+                .font(.system(size: 35, weight: .heavy))
             
             MobileNumberView()
             
@@ -56,18 +56,14 @@ struct ScreenMainView: View {
                         )
                 }
             }
-            .padding(.top, 10)
+            .padding(.top, 5)
             
             Text("By continuing you agree to our terms & privacy policy")
                 .multilineTextAlignment(.center)
-                .font(.system(size: 15, weight: .semibold))
+                .font(.system(size: 13, weight: .semibold))
                 .padding(.top, 5)
                 .padding(.horizontal, 20)
-            Spacer()
         }
-        .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0)
-
-        .ignoresSafeArea()
     }
 }
 
